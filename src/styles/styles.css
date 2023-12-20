@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #1e1e1e;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header {
+  background-color: #222;
+  padding: 20px 0;
+  border-bottom: 2px solid #444;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content h1 {
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+header.scrolled {
+  background-color: #222;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main {
+  padding: 90px 0 20px; 
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  width: 300px;
+  background-color: #292929;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+  margin: 20px;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product .product-image {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.product .product-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product:hover .product-image img {
+  transform: scale(1.1);
+}
+
+.product .product-info {
+  padding: 20px 0;
+}
+
+.product h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.product p {
+  color: #bbb;
+  margin-bottom: 15px;
+}
+
+.product button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #444;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.product button:hover {
+  background-color: #666;
+}
+
+/* Estilos para o rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* ... (códigos anteriores permanecem os mesmos) ... */
+
+/* Adicionando nova estrutura para posicionar os elementos */
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.products {
+  flex: 2;
+}
+
+.cart {
+  width: 300px;
+  height: calc(100vh - 90px);
+  background-color: #222;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  position: fixed;
+  top: 90px;
+  right: 0;
+}
+
+.cart h2 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.cart-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-items li {
+  margin-bottom: 10px;
+}
+
+.cart-total {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.cart-total p {
+  font-weight: bold;
+}
+
+.cart-total button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.cart-total button:hover {
+  background-color: #555;
+}
+
+.cart-icon {
+  cursor: pointer;
+  /* ... (outros estilos) ... */
+}
+
+
+#cartIcon img,
+#toggleCartButton img { 
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+}
+
+.toggle-cart-button {
+  display: none;
+}
+
+.cart.active .toggle-cart-button {
+  display: block;
+}
+
+.exibirCart {
+  display: none;
+  position: fixed;
+  top: 50%;
+  right: 10px;
+}
