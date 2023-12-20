@@ -9,13 +9,11 @@ body {
   line-height: 1.6;
   background-color: #1e1e1e;
   color: #fff;
-  margin: 0;
-  padding: 0;
 }
 
 .container {
-  width: 90%;
-  margin: 0 auto;
+  display: flex;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -34,6 +32,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 90%;
+  margin: auto;
 }
 
 .header-content h1 {
@@ -76,6 +76,8 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-left: 200px;
+  flex: 2;
 }
 
 .product {
@@ -100,12 +102,14 @@ main {
 }
 
 .product .product-image {
+  display: flex;
+  justify-content: center;
   overflow: hidden;
   border-radius: 8px;
 }
 
 .product .product-image img {
-  width: 100%;
+  width: 70%;
   height: auto;
   transition: transform 0.3s ease-in-out;
 }
@@ -145,25 +149,10 @@ main {
   background-color: #666;
 }
 
-/* Estilos para o rodapé */
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-}
-
-/* ... (códigos anteriores permanecem os mesmos) ... */
-
-/* Adicionando nova estrutura para posicionar os elementos */
 .main-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-}
-
-.products {
-  flex: 2;
 }
 
 .cart {
@@ -218,7 +207,6 @@ footer {
 
 .cart-icon {
   cursor: pointer;
-  /* ... (outros estilos) ... */
 }
 
 
@@ -242,4 +230,28 @@ footer {
   position: fixed;
   top: 50%;
   right: 10px;
+}
+
+.filters {
+  height: calc(100vh - 90px);
+  top: 90px;
+  left: 0;
+  width: 200px;
+  position: fixed;
+  background-color: #292929;
+}
+
+.filters h2{
+  margin: 15px;
+}
+
+.filters label {
+  margin-left: 25px;
+  padding: 5px;
+  display: block;
+  cursor: pointer;
+}
+
+.filters input[type="checkbox"] {
+  margin-right: 5px;
 }

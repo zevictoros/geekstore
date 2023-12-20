@@ -1,0 +1,20 @@
+.section2{
+    width: 100%;
+    background-color: #CCC;
+}
+
+.elements {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    margin: 5px;
+}

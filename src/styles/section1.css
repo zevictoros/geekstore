@@ -1,0 +1,71 @@
+.section1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70vh;
+}
+
+.section1-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1-left h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #FFF;
+}
+
+.section1-left h4 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #DDD;
+}
+
+.section1-left span {
+    font-size: 1.2em;
+    color: #CCC;
+    max-width: 70%;
+    margin-bottom: 30px;
+}
+
+.section1-right {
+    width: 50%;
+    height: 100%;
+    background-image: url('./images/bg.png');
+    background-position: center;
+    background-size: cover;
+    order: 2;
+}
+
+.button {
+    display: flex;
+    align-self: end;
+    padding: 20px 30px;
+}
+
+button {
+    padding: 10px 20px;
+    background-image: linear-gradient(to right, #ff416c, #ff4b2b);
+    border: none;
+    color: #FFF;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 120px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* Sombra */
+}
+
+button:hover {
+    background-image: linear-gradient(to right, #ff4b2b, #ff416c);
+    transform: translateY(-2px);
+    /* Efeito de levantar um pouco ao passar o mouse */
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.3);
+    /* Aumentando um pouco a sombra no hover */
+}

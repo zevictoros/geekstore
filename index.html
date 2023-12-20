@@ -6,123 +6,144 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ecommerce Site</title>
   <link rel="stylesheet" href="./src/styles/styles.css">
+  <link rel="stylesheet" href="./src/styles/section1.css">
+  <link rel="stylesheet" href="./src/styles/section2.css">
+  <link rel="stylesheet" href="./src/styles/section3.css">
 </head>
 
 <body>
   <header>
-    <div class="container">
-      <div class="header-content">
-        <h1>Geek Store</h1>
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Produtos</a></li>
-            <li><a href="#">Carrinho</a></li>
-            <li><a href="#">Contato</a></li>
-          </ul>
-        </nav>
-      </div>
+    <div class="header-content">
+      <h1>Geek Store</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="#">Carrinho</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
-  <main class="main-container">
-    <div class="container">
-      <section class="products">
-        <div class="product">
-          <div class="product-image">
-            <img src="./src/styles/images/products/camisas/product1.png" alt="Product 1">
+  <main>
+    <section>
+      <div class="section1">
+        <div class="section1-left">
+          <div class="text">
+            <h1>Geek Store</h1>
+            <h4>Tudo que você precisa em um só lugar</h4>
+            <span>Explore nossa coleção exclusiva de produtos geek e encontre camisetas incríveis, action figures
+              colecionáveis, acessórios únicos e muito mais para completar o seu universo nerd!</span>
           </div>
-          <div class="product-info">
-            <h2>Camisa Geek</h2>
-            <p>Descrição do Produto</p>
-            <p>R$ 99.99</p>
-            <button>Adicionar ao Carrinho</button>
-          </div>
-        </div>
-        <div class="product">
-          <div class="product-image">
-            <img src="./src/styles/images/products/camisas/product2.png" alt="Product 1">
-          </div>
-          <div class="product-info">
-            <h2>Camisa Geek</h2>
-            <p>Descrição do Produto</p>
-            <p>R$ 99.99</p>
-            <button>Adicionar ao Carrinho</button>
+          <div class="button">
+            <button><a href="produtos.html"></a>Conferir</button>
           </div>
         </div>
-        <div class="product">
-          <div class="product-image">
-            <img src="./src/styles/images/products/camisas/product3.png" alt="Product 1">
-          </div>
-          <div class="product-info">
-            <h2>Camisa Geek</h2>
-            <p>Descrição do Produto</p>
-            <p>R$ 99.99</p>
-            <button>Adicionar ao Carrinho</button>
-          </div>
-        </div>
-        <div class="product">
-          <div class="product-image">
-            <img src="./src/styles/images/products/funko/product4.png" alt="Product 1">
-          </div>
-          <div class="product-info">
-            <h2>Funko Pop</h2>
-            <p>Descrição do Produto</p>
-            <p>R$ 99.99</p>
-            <button>Adicionar ao Carrinho</button>
-          </div>
-        </div>
-        <div class="product">
-          <div class="product-image">
-            <img src="./src/styles/images/products/funko/product5.png" alt="Product 1">
-          </div>
-          <div class="product-info">
-            <h2>Funko Pop</h2>
-            <p>Descrição do Produto</p>
-            <p>R$ 99.99</p>
-            <button>Adicionar ao Carrinho</button>
-          </div>
-        </div>
-        <!-- Outros produtos aqui -->
-      </section>
-      <div class="exibirCart">
-        <span id="cartIcon" class="cart-icon" onclick="exibirCart()">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-            class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5M10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5" />
-          </svg>
-        </span>
+        <div class="section1-right"></div>
       </div>
-      <aside class="cart">
-        <div class="cart-toggle">
-          <span id="cartIcon" class="cart-icon" onclick="ocultarCart()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-              class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8m-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5" />
-            </svg>
-          </span>
-        </div>
+    </section>
 
-        <h2>Carrinho de Compras</h2>
-        <ul class="cart-items">
-          <!-- Itens do carrinho serão adicionados dinamicamente aqui -->
-        </ul>
-        <div class="cart-total">
-          <p>Total: <span id="cart-total">R$ 0.00</span></p>
-          <button>Finalizar Compra</button>
+    <section>
+      <div class="section2">
+        <div class="elements">
+          <div class="element">
+            <img src="src\styles\images\icons\icone-frete-gratis.png">
+            <p>FRETE GRÁTIS*</p>
+            <span>Consulte as condições</span>
+          </div>
+          <div class="element">
+            <img src="src\styles\images\icons\icone-desconto.png">
+            <p>DESCONTA À VISTA</p>
+            <span>3% off no Pix ou Boleto</span>
+          </div>
+          <div class="element">
+            <img src="src\styles\images\icons\cartao-de-credito.png">
+            <p>PARCELE NO CARTÃO</p>
+            <span>Até 5x sem juros*</span>
+          </div>
+          <div class="element">
+            <img src="src\styles\images\icons\icone-tamanho.png">
+            <p>TAMANHOS GRANDES</p>
+            <span>Até o 4G</span>
+          </div>
+          <div class="element">
+            <img src="src\styles\images\icons\icone-troca.png">
+            <p>1ª TROCA GRÁTIS</p>
+            <span>Solicite dentro de 10 dias</span>
+          </div>
         </div>
-      </aside>
-    </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section3">
+        <div class="section3-title">
+          <h1>Lançamentos</h1>
+        </div>
+        <div class="section3-lancamentos">
+          <div class="carrossel">
+            <div class="item-carrossel">
+              <div class="produto-img">
+                <span>LANÇAMENTO</span>
+                <img src="./src/styles/images/products/camisas/camisa1.png">
+              </div>
+              <div class="produto-info">
+                <p>Camisa de anime</p>
+                <span>R$79,90</span>
+              </div>
+            </div>
+            <div class="item-carrossel">
+              <div class="produto-img">
+                <span>LANÇAMENTO</span>
+                <img src="./src/styles/images/products/camisas/camisa2.png">
+              </div>
+              <div class="produto-info">
+                <p>Camisa de anime</p>
+                <span>R$79,90</span>
+              </div>
+            </div>
+            <div class="item-carrossel">
+              <div class="produto-img">
+                <span>LANÇAMENTO</span>
+                <img src="./src/styles/images/products/camisas/camisa3.png">
+              </div>
+              <div class="produto-info">
+                <p>Camisa de anime</p>
+                <span>R$79,90</span>
+              </div>
+            </div>
+            <div class="item-carrossel">
+              <div class="produto-img">
+                <span>LANÇAMENTO</span>
+                <img src="./src/styles/images/products/funko/funko1.png">
+              </div>
+              <div class="produto-info">
+                <p>Funko POP!</p>
+                <span>R$119,90</span>
+              </div>
+            </div>
+            <div class="item-carrossel">
+              <div class="produto-img">
+                <span>LANÇAMENTO</span>
+                <img src="./src/styles/images/products/funko/funko2.png">
+              </div>
+              <div class="produto-info">
+                <p>Funko Pop!</p>
+                <span>R$119,90</span>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 Geek Store - José Victor </p>
-    </div>
-  </footer>
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="./src/scripts/script.js"></script>
+  <script src="./src/scripts/filtro.js"></script>
+  <script src="./src/scripts/carrosel.js"></script>
 </body>
 
 </html>
