@@ -8,27 +8,30 @@
     justify-content: center;
     margin: 35px;
     text-transform: uppercase;
+    
 }
 
 .section3-title h1 {
     font-size: 31px;
+    border-bottom: 3px solid #fff;
+}
+
+.section3-lancamentos {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 .carrossel {
     display: flex;
-    overflow-x: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    gap: 10px;
-    width: calc((100% / 3) * 4); /* Largura para mostrar três itens por vez */
+    transition: transform 0.5s ease-in-out;
+    width: 300%;
 }
 
-.item-carrossel {
-    flex: 0 0 calc(80% / 3); /* Define o tamanho de cada item */
+.carrossel-section {
+    flex: 0 0 33.33%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
 }
 
 .item-carrossel img {
@@ -56,4 +59,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.produto-info p{
+    padding: 5px;
+    font-size: 20px;
+}
+
+.produto-info span {
+    font-size: 25px;
+}
+
+.section3 .button {
+    display: flex;
+    justify-content: center;
+}
+
+.section3 .button button{
+    width: auto;
 }

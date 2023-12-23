@@ -1,24 +1,30 @@
 const carrossel = document.querySelector('.carrossel');
-const itensCarrossel = document.querySelectorAll('.item-carrossel');
+const secoesCarrossel = document.querySelectorAll('.carrossel-section');
 
-let tamanhoItem = itensCarrossel[0].offsetWidth;
+let currentSectionIndex = 0;
+let sectionWidth = secoesCarrossel[0].offsetWidth;
+let totalSections = secoesCarrossel.length;
 
-// Copie os itens do carrossel para criar um loop infinito
-itensCarrossel.forEach((item) => {
-    carrossel.appendChild(item.cloneNode(true));
-});
-
-// Função para mover o carrossel
-function moverCarrossel() {
-    carrossel.style.transition = 'transform 1s ease-in-out';
-    carrossel.style.transform = `translateX(-${tamanhoItem}px)`;
-
-    setTimeout(() => {
-        carrossel.style.transition = 'none';
-        carrossel.style.transform = 'translateX(0)';
-        carrossel.appendChild(carrossel.firstElementChild);
-    }, 1000);
+function updateSectionWidth() {
+  sectionWidth = secoesCarrossel[0].offsetWidth;
 }
 
-// Move o carrossel automaticamente a cada intervalo de tempo
-setInterval(moverCarrossel, 3000);
+function goToSection(index) {
+  carrossel.style.transform = `translateX(-${index * sectionWidth}px)`;
+  currentSectionIndex = index;
+}
+
+function nextSection() {
+  if (currentSectionIndex < totalSections - 1) {
+    goToSection(currentSectionIndex + 1);
+  } else {
+    goToSection(0);
+  }
+}
+
+setInterval(nextSection, 3000);
+
+window.addEventListener('resize', () => {
+  updateSectionWidth();
+  goToSection(currentSectionIndex);
+});
