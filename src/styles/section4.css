@@ -1,0 +1,47 @@
+.section4-all {
+    background-color: #333;
+    padding-top: 20px;
+    margin-top: 10px;
+}
+
+.section4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.section4-products {
+    position: relative;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    overflow: hidden;
+    cursor: pointer;
+    height: 300px;
+    border: 5px double #DDD;
+}
+
+.section4-products img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.section4-products:hover img {
+    transform: scale(1.1);
+}
+
+.section4 .text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #FFF;
+    padding: 10px;
+    max-width: 100%;
+    word-wrap: break-word;
+    font-weight: bold;
+    font-size: 31px;
+    text-shadow: -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 1px 1px 0 #333;
+}

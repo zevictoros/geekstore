@@ -3,7 +3,7 @@
     overflow: hidden;
 }
 
-.section3-title {
+.section-title {
     display: flex;
     justify-content: center;
     margin: 35px;
@@ -11,7 +11,7 @@
     
 }
 
-.section3-title h1 {
+.section-title h1 {
     font-size: 31px;
     border-bottom: 3px solid #fff;
 }
