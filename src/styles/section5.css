@@ -1,0 +1,14 @@
+.section5{
+    height: 100px;
+}
+
+.marcas {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.marcas img {
+    padding: 10px;
+}
