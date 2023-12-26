@@ -13,12 +13,9 @@
 }
 
 .product {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
     width: 300px;
     background-color: #292929;
-    border: 1px solid #444;
+    border: 2px solid #011429;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
@@ -41,7 +38,7 @@
 }
 
 .product .product-image img {
-    width: 70%;
+    width: 100%;
     height: auto;
     transition: transform 0.3s ease-in-out;
 }
@@ -55,7 +52,7 @@
 }
 
 .product h2 {
-    font-size: 1.8em;
+    font-size: 1.5em;
     margin-bottom: 10px;
 }
 
@@ -168,9 +165,10 @@
     height: calc(100vh - 90px);
     top: 90px;
     left: 0;
-    width: 200px;
+    width: 220px;
     position: fixed;
     background-color: #292929;
+    border-right: 2px solid #011429;
 }
 
 .filters h2 {

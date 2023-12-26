@@ -47,107 +47,8 @@
         </label>
       </div>
 
-      <section class="products">
-        <div class="product" data-category="camisas">
-          <div class="product-image">
-            <img src="./src/images/products/camisas/camisa1.png">
-          </div>
-          <div class="product-info">
-            <h2>Camisa Geek</h2>
-            <p>Descrição do Produto</p>
-            <p>R$ 99.99</p>
-            <button>Adicionar ao Carrinho</button>
-          </div>
-        </div>
-        <div class="product" data-category="camisas">
-          <div class="product-image">
-            <img src="./src/images/products/camisas/camisa2.png">
-          </div>
-          <div class="product-info">
-            <h2>Camisa Geek</h2>
-            <p>Descrição do Produto</p>
-            <p>R$ 99.99</p>
-            <button>Adicionar ao Carrinho</button>
-          </div>
-        </div>
-        <div class="product" data-category="camisas">
-          <div class="product-image">
-            <img src="./src/images/products/camisas/camisa3.png">
-          </div>
-          <div class="product-info">
-            <h2>Camisa Geek</h2>
-            <p>Descrição do Produto</p>
-            <p>R$ 99.99</p>
-            <button>Adicionar ao Carrinho</button>
-          </div>
-        </div>
-        <div class="product" data-category="funko">
-          <div class="product-image">
-            <img src="./src/images/products/funko/funko1.png">
-          </div>
-          <div class="product-info">
-            <h2>Funko Pop</h2>
-            <p>Descrição do Produto</p>
-            <p>R$ 99.99</p>
-            <button>Adicionar ao Carrinho</button>
-          </div>
-        </div>
-        <div class="product" data-category="funko">
-          <div class="product-image">
-            <img src="./src/images/products/funko/funko2.png">
-          </div>
-          <div class="product-info">
-            <h2>Funko Pop</h2>
-            <p>Descrição do Produto</p>
-            <p>R$ 99.99</p>
-            <button>Adicionar ao Carrinho</button>
-          </div>
-        </div>
-        <div class="product" data-category="almofada">
-          <div class="product-image">
-            <img src="./src/images/products/almofadas/almofada1.png">
-          </div>
-          <div class="product-info">
-            <h2>Almofada Harry Potter</h2>
-            <p>Descrição do Produto</p>
-            <p>R$ 69.99</p>
-            <button>Adicionar ao Carrinho</button>
-          </div>
-        </div>
-        <div class="product" data-category="caneca">
-          <div class="product-image">
-            <img src="./src/images/products/canecas/caneca1.png">
-          </div>
-          <div class="product-info">
-            <h2>Caneca Akatsuki</h2>
-            <p>Descrição do Produto</p>
-            <p>R$ 87.90</p>
-            <button>Adicionar ao Carrinho</button>
-          </div>
-        </div>
-        <div class="product" data-category="capacho">
-          <div class="product-image">
-            <img src="./src/images/products/capachos/capacho1.png">
-          </div>
-          <div class="product-info">
-            <h2>Tapete Star Wars</h2>
-            <p>Descrição do Produto</p>
-            <p>R$ 109.90</p>
-            <button>Adicionar ao Carrinho</button>
-          </div>
-        </div>
-        <div class="product" data-category="placa">
-          <div class="product-image">
-            <img src="./src/images/products/placas/placa1.png">
-          </div>
-          <div class="product-info">
-            <h2>Placa Gaming Mode</h2>
-            <p>Descrição do Produto</p>
-            <p>R$ 99.99</p>
-            <button>Adicionar ao Carrinho</button>
-          </div>
-        </div>
-      </section>
+      <section class="products"></section>
+
       <div class="exibirCart">
         <span id="cartIcon" class="cart-icon" onclick="exibirCart()">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
@@ -179,8 +80,9 @@
     </div>
   </main>
 
-  <script src="./src/scripts/script.js"></script>
+  <script type="module" src="./src/scripts/createProdutos.js"></script>
   <script src="./src/scripts/filtro.js"></script>
+  <script src="./src/scripts/script.js"></script>
 </body>
 
 </html>

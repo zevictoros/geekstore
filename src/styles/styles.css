@@ -25,7 +25,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 main {
-  padding: 90px 0 20px;
+  padding: 90px 0 0;
 }
 
 header {

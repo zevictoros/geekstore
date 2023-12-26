@@ -24,7 +24,7 @@
 
 .carrossel {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 2s ease-in-out;
     width: 300%;
 }
 
@@ -32,6 +32,10 @@
     flex: 0 0 33.33%;
     display: flex;
     justify-content: space-around;
+}
+
+.item-carrossel {
+    padding: 5px 50px;
 }
 
 .item-carrossel img {
