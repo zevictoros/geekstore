@@ -36,7 +36,7 @@
 .section1-right {
     width: 50%;
     height: 100%;
-    background-image: url('./images/bg.png');
+    background-image: url('../../images/bg.png');
     background-position: center;
     background-size: cover;
     order: 2;
