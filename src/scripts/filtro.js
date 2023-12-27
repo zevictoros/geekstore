@@ -23,9 +23,21 @@ function filterProducts() {
   console.log("Show Capacho:", showCapacho);
   console.log("Show Placa:", showPlaca);
 
+  const checkboxes = [showCamisas, showFunko, showAlmofada, showCaneca, showCapacho, showPlaca];
+  const allUnchecked = checkboxes.every(checkbox => !checkbox);
+
+  if (allUnchecked) {
+    produtos.forEach(produto => {
+      produto.style.display = 'block';
+    });
+    return;
+  }
+
   produtos.forEach(produto => {
     const categoria = produto.getAttribute('data-category');
     console.log("Product Category:", categoria);
+
+    produto.style.display = 'none';
 
     if (
       (showCamisas && categoria === 'camisas') ||
@@ -37,14 +49,7 @@ function filterProducts() {
     ) {
       console.log("Displaying product");
       produto.style.display = 'block';
-    } else {
-      console.log("Hiding product");
-      produto.style.display = 'none';
     }
-  });
-
-  produtos.forEach(produto => {
-    console.log("Produto:", produto, "Display:", produto.style.display);
   });
 }
 
