@@ -185,3 +185,19 @@
 .filters input[type="checkbox"] {
     margin-right: 5px;
 }
+
+.cart-items button {
+    padding: 1px 5px;
+    margin: 0 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    background-color: #333;
+    border-radius: 5px;
+    color: white;
+}
+
+.cart-items button:hover {
+    background-color: #555;
+    transition: background-color 0.3s ease-in-out;
+}

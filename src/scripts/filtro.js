@@ -1,7 +1,6 @@
 function filterProducts() {
   const produtos = Array.from(document.querySelectorAll('.product'));
-  console.log("Filtering products...");
-  
+
   const camisasCheckbox = document.getElementById('camisasCheckbox');
   const funkoCheckbox = document.getElementById('funkoCheckbox');
   const almofadaCheckbox = document.getElementById('almofadaCheckbox');
@@ -16,13 +15,6 @@ function filterProducts() {
   const showCapacho = capachoCheckbox.checked;
   const showPlaca = placaCheckbox.checked;
 
-  console.log("Show Camisas:", showCamisas);
-  console.log("Show Funko:", showFunko);
-  console.log("Show Almofada:", showAlmofada);
-  console.log("Show Caneca:", showCaneca);
-  console.log("Show Capacho:", showCapacho);
-  console.log("Show Placa:", showPlaca);
-
   const checkboxes = [showCamisas, showFunko, showAlmofada, showCaneca, showCapacho, showPlaca];
   const allUnchecked = checkboxes.every(checkbox => !checkbox);
 
@@ -35,8 +27,6 @@ function filterProducts() {
 
   produtos.forEach(produto => {
     const categoria = produto.getAttribute('data-category');
-    console.log("Product Category:", categoria);
-
     produto.style.display = 'none';
 
     if (
@@ -47,7 +37,6 @@ function filterProducts() {
       (showCapacho && categoria === 'capacho') ||
       (showPlaca && categoria === 'placa')
     ) {
-      console.log("Displaying product");
       produto.style.display = 'block';
     }
   });
