@@ -22,7 +22,7 @@ function nextSection() {
   }
 }
 
-setInterval(nextSection, 6000);
+setInterval(nextSection, 4000);
 
 window.addEventListener('resize', () => {
   updateSectionWidth();

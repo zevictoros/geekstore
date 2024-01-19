@@ -10,14 +10,12 @@ function increaseQuantity(name, price) {
 
 function decreaseQuantity(name, price) {
     if (cartItems[name].quantity === 1) {
-        // Se a quantidade for 1, remova o item do carrinho
         const itemElement = cartItems[name].element;
         itemElement.remove();
         delete cartItems[name];
 
         updateTotal(-parseFloat(price));
     } else if (cartItems[name].quantity > 1) {
-        // Se a quantidade for maior que 1, diminua a quantidade normalmente
         cartItems[name].quantity--;
         const itemElement = cartItems[name].element;
         itemElement.querySelector('.quantity').textContent = cartItems[name].quantity;

@@ -1,13 +1,12 @@
-.main-content {
-    padding: 50px;
-    color: #fff;
+.contact-section {
+    height: 100vh;
 }
 
 h1 {
     display: flex;
     justify-content: center;
     font-size: 36px;
-    margin: 20px;
+    margin-top: 20px;
 }
 
 .contact-form {
@@ -48,24 +47,4 @@ h1 {
 .contact-form button:hover {
     background-color: #005dff;
     transition: all 0.3s ease-in-out;
-}
-
-.contact-info {
-    margin-top: 50px;
-    text-align: center;
-    color: #DDD;
-}
-
-.contact-info h2 {
-    font-size: 31px;
-}
-
-.contact-info p {
-    margin: 15px;
-}
-
-.contact-info a {
-    font-size: 20px;
-    text-decoration: none;
-    color: #DDD;
 }

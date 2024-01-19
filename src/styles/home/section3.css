@@ -1,5 +1,5 @@
 .section3 {
-    max-height: 500px;
+    max-height: fit-content;
     overflow: hidden;
 }
 
@@ -8,7 +8,7 @@
     justify-content: center;
     margin: 35px;
     text-transform: uppercase;
-    
+
 }
 
 .section-title h1 {
@@ -31,6 +31,8 @@
 .carrossel-section {
     flex: 0 0 33.33%;
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-around;
 }
 
@@ -65,7 +67,7 @@
     align-items: center;
 }
 
-.produto-info p{
+.produto-info p {
     padding: 5px;
     font-size: 20px;
 }
@@ -79,6 +81,6 @@
     justify-content: center;
 }
 
-.section3 .button button{
+.section3 .button button {
     width: auto;
 }

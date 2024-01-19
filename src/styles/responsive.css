@@ -1,0 +1,29 @@
+@media screen and (max-width: 692px) {
+    .section1-right {
+        display: none;
+    }
+
+    .section1-left {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .section1 {
+        height: fit-content;
+    }
+    .section1-left h1 {
+        display: flex;
+        justify-content: center;
+    }
+    .section1-left span {
+        text-align: justify;
+    }
+    .section1 .button {
+        align-self: center;
+    }
+    .section1-left h4 {
+        text-align: center;
+        font-size: 1.2em;
+    }
+}
