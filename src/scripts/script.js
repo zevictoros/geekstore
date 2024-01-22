@@ -97,3 +97,19 @@ function exibirCart() {
     var buttonCart = document.querySelector('.exibirCart');
     buttonCart.style.display = 'none';
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const mobileMenu = document.getElementById('mobile-menu');
+    const overlay = document.getElementById('overlay');
+  
+    mobileMenu.addEventListener('click', function () {
+      document.body.classList.toggle('menu-open');
+      overlay.style.display = document.body.classList.contains('menu-open') ? 'block' : 'none';
+    });
+  
+    overlay.addEventListener('click', function () {
+      document.body.classList.remove('menu-open');
+      overlay.style.display = 'none';
+    });
+  });
+  
