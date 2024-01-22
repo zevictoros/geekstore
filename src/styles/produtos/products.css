@@ -8,7 +8,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-left: 200px;
+    margin-left: 220px;
     flex: 2;
 }
 
@@ -78,12 +78,14 @@
     background-color: #666;
 }
 
+/* Layout principal */
 .main-container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
 
+/* Carrinho de compras */
 .cart {
     width: 300px;
     height: calc(100vh - 90px);
@@ -94,6 +96,7 @@
     position: fixed;
     top: 90px;
     right: 0;
+    z-index: 10;
 }
 
 .cart h2 {
@@ -138,7 +141,6 @@
     cursor: pointer;
 }
 
-
 #cartIcon img,
 #toggleCartButton img {
     background-color: white;
@@ -169,6 +171,7 @@
     position: fixed;
     background-color: #292929;
     border-right: 2px solid #011429;
+    display: block;
 }
 
 .filters h2 {
@@ -186,18 +189,86 @@
     margin-right: 5px;
 }
 
-.cart-items button {
-    padding: 1px 5px;
-    margin: 0 10px;
-    font-size: 1.2em;
-    cursor: pointer;
-    border: none;
-    background-color: #333;
-    border-radius: 5px;
-    color: white;
+.showFilter {
+    display: flex;
+    justify-content: end;
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
 }
 
-.cart-items button:hover {
-    background-color: #555;
-    transition: background-color 0.3s ease-in-out;
+.filter-toggle,
+.oculta-filter {
+    height: fit-content;
+    
+    padding: 10px 20px;
+    background-image: linear-gradient(to right, #ff416c, #ff4b2b);
+    border: none;
+    color: #FFF;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 15px;
+}
+
+.filter-toggle {
+    display: none;
+    position: fixed;
+    width: 100px;
+}
+
+.filters {
+    display: block;
+}
+
+.filters h2 {
+    margin: 15px;
+}
+
+.filters label {
+    margin-left: 25px;
+    padding: 5px;
+    display: block;
+    cursor: pointer;
+}
+
+.filters input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.oculta-filter {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+    .products {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    .filters {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        position: fixed;
+        height: 100%;
+        border-right: none;
+        z-index: 11;
+    }
+
+    .filter-toggle,
+    .oculta-filter {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .product {
+        width: auto;
+    }
 }

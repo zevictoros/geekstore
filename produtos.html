@@ -17,35 +17,41 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="produtos.html">Produtos</a></li>
-          <li><a href="#">Carrinho</a></li>
           <li><a href="contato.html">Contato</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  
+
   <main class="main-container">
+    <div class="showFilter">
+      <button class="filter-toggle">Filtrar</button>
+    </div>
     <div class="container">
       <div class="filters">
         <h2>Filtros</h2>
-        <label>
-          <input type="checkbox" id="almofadaCheckbox" value="almofada"> Almofadas
-        </label>
-        <label>
-          <input type="checkbox" id="camisasCheckbox" value="camisas"> Camisas
-        </label>
-        <label>
-          <input type="checkbox" id="canecaCheckbox" value="caneca"> Canecas
-        </label>
-        <label>
-          <input type="checkbox" id="capachoCheckbox" value="capacho"> Capachos
-        </label>
-        <label>
-          <input type="checkbox" id="funkoCheckbox" value="funko"> Funko
-        </label>
-        <label>
-          <input type="checkbox" id="placaCheckbox" value="placa"> Placas Decorativas
-        </label>
+        <div class="label">
+          <label>
+            <input type="checkbox" id="almofadaCheckbox" value="almofada"> Almofadas
+          </label>
+          <label>
+            <input type="checkbox" id="camisasCheckbox" value="camisas"> Camisas
+          </label>
+          <label>
+            <input type="checkbox" id="canecaCheckbox" value="caneca"> Canecas
+          </label>
+          <label>
+            <input type="checkbox" id="capachoCheckbox" value="capacho"> Capachos
+          </label>
+          <label>
+            <input type="checkbox" id="funkoCheckbox" value="funko"> Funko
+          </label>
+          <label>
+            <input type="checkbox" id="placaCheckbox" value="placa"> Placas Decorativas
+          </label>
+        </div>
+
+        <button class="oculta-filter">Aplicar Filtros</button>
       </div>
 
       <section class="products"></section>
@@ -83,6 +89,7 @@
 
   <script type="module" src="./src/scripts/createProdutos.js"></script>
   <script src="./src/scripts/filtro.js"></script>
+  <script src="./src/scripts/showFilter.js"></script>
   <script src="./src/scripts/script.js"></script>
 </body>
 
