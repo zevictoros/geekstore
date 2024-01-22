@@ -103,7 +103,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const overlay = document.getElementById('overlay');
     const mobileNav = document.querySelector('.mobile-nav');
 
-    // Inicialmente, oculta o menu móvel
     overlay.style.display = 'none';
 
     mobileMenu.addEventListener('click', function () {
