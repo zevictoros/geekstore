@@ -101,15 +101,20 @@ function exibirCart() {
 document.addEventListener('DOMContentLoaded', function () {
     const mobileMenu = document.getElementById('mobile-menu');
     const overlay = document.getElementById('overlay');
-  
+    const mobileNav = document.querySelector('.mobile-nav');
+
+    // Inicialmente, oculta o menu móvel
+    overlay.style.display = 'none';
+
     mobileMenu.addEventListener('click', function () {
-      document.body.classList.toggle('menu-open');
-      overlay.style.display = document.body.classList.contains('menu-open') ? 'block' : 'none';
+        document.body.classList.toggle('menu-open');
+        mobileNav.style.display = document.body.classList.contains('menu-open') ? 'block' : 'none';
+        overlay.style.display = document.body.classList.contains('menu-open') ? 'block' : 'none';
     });
-  
+
     overlay.addEventListener('click', function () {
-      document.body.classList.remove('menu-open');
-      overlay.style.display = 'none';
+        document.body.classList.remove('menu-open');
+        mobileNav.style.display = 'none';
+        overlay.style.display = 'none';
     });
-  });
-  
+});
