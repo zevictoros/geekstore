@@ -200,7 +200,6 @@
 .filter-toggle,
 .oculta-filter {
     height: fit-content;
-    
     padding: 10px 20px;
     background-image: linear-gradient(to right, #ff416c, #ff4b2b);
     border: none;

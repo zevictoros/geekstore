@@ -12,7 +12,12 @@
 <body>
   <header>
     <div class="header-content">
-      <img src="./src/images/logo.png">
+      <img src="./src/images/logo.png" alt="Logo">
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -22,6 +27,16 @@
       </nav>
     </div>
   </header>
+
+  <div class="overlay" id="overlay">
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
 
   <main class="main-container">
     <div class="showFilter">
